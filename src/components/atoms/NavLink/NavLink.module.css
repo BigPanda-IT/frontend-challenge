@@ -1,0 +1,10 @@
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  transition: background-color 0.3s;
+}
+.navLink:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

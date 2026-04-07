@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../../molecules/NavBar';
-import styles from './Header.module.css';
+import styles from './PageHeader.module.css';
 
 const PageHeader: React.FC = () => {
   return (
