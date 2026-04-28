@@ -1,0 +1,8 @@
+.catGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);   
+  padding-left: 64px;     
+  padding-right: 64px;    
+  padding-top: 48px; 
+  gap: 64px;     
+}

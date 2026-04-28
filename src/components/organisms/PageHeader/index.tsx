@@ -1,11 +1,16 @@
 import React from 'react';
 import NavBar from '../../molecules/NavBar';
-import styles from './PageHeader.module.css';
+import styles from './PageHeader.module.css'; 
 
-const PageHeader: React.FC = () => {
+interface PageHeaderProps {
+  activeTab: 'all' | 'favorites';
+  onTabChange: (tab: 'all' | 'favorites') => void;
+}
+
+const PageHeader: React.FC<PageHeaderProps> = ({ activeTab, onTabChange }) => {
   return (
     <header className={styles.header}>
-      <NavBar />
+      <NavBar activeTab={activeTab} onTabChange={onTabChange}/>
     </header>
   );
 };

@@ -1,0 +1,13 @@
+.cell {
+  width: 225px;
+  height: 225px;
+  background-color: #808080;
+  transition: transform 0.3s ease; 
+  transform-origin: center; 
+  position: relative;
+}
+
+.cell:hover {
+  transform: scale(1.14);
+  --opacity: 1;
+}

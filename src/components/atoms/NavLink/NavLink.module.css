@@ -1,10 +1,36 @@
-.navLink {
-  color: white;
+.link-all-kitties {
+  width: 120px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  padding: 10px 20px;
-  margin-right: 20px;
-  transition: background-color 0.3s;
+  font-weight: 400;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 14px;
 }
-.navLink:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+
+.link-favorite-kitties {
+  width: 173px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.link-all-kitties:not(.active),
+.link-favorite-kitties:not(.active) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.link-all-kitties:hover,
+.link-favorite-kitties:hover {
+  background: #1E88E5;
 }

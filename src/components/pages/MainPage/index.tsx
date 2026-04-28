@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BaseTemplate from '../../templates/BaseTemplate';
+import CatGrid from '../../organisms/CatGrid/CatGrid';
+import FavoritePage from '../FavoritePage'; 
 
 const MainPage: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'all' | 'favorites'>('all'); 
+
   return (
-    <BaseTemplate>
-      <div>
-        <h1>Добро пожаловать на страницу котиков!</h1>
-      </div>
+    <BaseTemplate activeTab={activeTab} onTabChange={setActiveTab}>
+      {activeTab === 'all' && <CatGrid />}
+      {activeTab === 'favorites' && <FavoritePage />}
     </BaseTemplate>
   );
 };
